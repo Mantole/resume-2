@@ -1,0 +1,213 @@
+body {
+	background-color: 	rgb(242, 242, 242);
+	
+}
+
+li {
+	list-style: none;
+}
+
+.main_container {
+    width: 1500px;
+	margin: auto;
+	max-width: 100%;
+}
+
+.main_inner_container {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+.left_section {
+	background-color: 	rgb(255, 255, 255);
+	width: 30%;
+	box-shadow: 1px 1px 10px #888888;
+	border-radius: 5px;
+	margin: 1.5em 0.7em 1em 0em;
+}
+
+
+.left_section i, .right_section i {
+	margin-left: 1em;
+	color: green;
+	height: 1em;
+    line-height: 1em;
+	font-size: 1.3em;
+}
+
+#profile_pic {
+	max-width: 100%;
+	border-bottom-right-radius: 20%;
+}
+
+.profile h1 {
+	font-family: calibri;
+	color: rgb(128, 128, 128);
+	margin: 0.7em 0 0.7em 0.5em;
+}
+
+.profile p span {
+	margin-left: 1em;
+}
+
+.skills {
+	width: 40%;
+}
+
+.smaller_screen_hr {
+	display: none;
+}
+
+.skills span, .profile span, .languages span, .about_me span {
+	font-size: 1em;
+	margin-left: 1.5em;
+	color: rgb(128, 128, 128);
+}
+
+.about_me p {
+	margin-top: 2em;
+}
+
+.skills p span, .languages p span, .about_me p span, .interests p span, .personal_qualities p span, .work_examples p span  {
+	font-size: 1.6em;
+	margin-left: 0.5em;
+	color: rgb(128, 128, 128);
+}
+
+.skills p, .languages p {
+	margin-bottom: 2em;
+}
+
+.progress {
+	width: 90%;
+	height: 1em;
+	margin: 1em auto;
+	border-radius: 50px;
+}
+
+.progress-bar {
+	background: rgb(0, 179, 60);
+	height:1em;
+	line-height: 1em;
+	font-size: 1em;
+	border-radius: 50px;
+}
+
+hr {
+    margin: 3em 2em;;
+}
+
+.languages {
+	width: 40%;
+	float: right;
+	margin-right: 4em;
+	margin-top: 8.5em;
+}
+
+.right_section {
+	width: 70%;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 1px 1px 10px #888888;
+	border-radius: 5px;
+	margin: 1.5em 0em 1em 0.7em;
+}
+
+.about_me_text {
+	color: rgb(128, 128, 128);
+	margin: 1em 2em;
+	text-align: justify;
+}
+
+.about_me_text p {
+	margin: 0;
+	text-indent: 20px;
+	padding: 0.3em;
+}
+
+.interests {
+	padding-bottom: 2em;
+}
+
+.interests ul li, .personal_qualities ul li {
+	color: rgb(128, 128, 128);
+	padding: 0.3em;
+}
+
+.projects_images {
+	cursor: pointer;
+	border-radius: 15px;
+	border: 1px solid green;
+	margin: 2em;
+	transition: all 0.2s ease-in-out;
+}
+
+.projects_images:hover {
+	box-shadow: 1px 1px 10px green;
+}
+
+footer {
+	color: white;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	background: green;
+	height: 10em;
+}
+
+footer p a {
+	text-decoration: none;
+}
+
+footer img {
+	position: relative;
+	bottom: 2px;
+	transition: all 0.2s ease-in-out;
+}
+
+footer img:hover {
+	transform: scale(1.1);
+}
+
+/*--------------------------------------------------------- Screen width less than 900px */
+@media only screen and (max-width: 900px) {
+
+.right_section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.languages, .skills {
+	margin: auto;
+	width: 80%;
+}
+
+.smaller_screen_hr {
+	display: block;
+}
+
+.main_inner_container, .main_container {
+	flex-direction: column;
+	width: 100%;
+}
+
+.left_section, .right_section {
+	width: 100%;
+	margin: 0;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+#profile_pic {
+	max-width: 50%;
+}
+
+}
+
+
+
+
